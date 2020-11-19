@@ -6,9 +6,12 @@ const Navbar = () => {
   return (
     <>
       <ReactBootStrap.Navbar
+
+        fixed="top"
         collapseOnSelect
-        expand="md"
-        style={{ backgroundColor: "transparent" }}
+        expand="lg"
+        style={{ backgroundColor: "rgba(37, 26, 26, 1)" }}
+
         variant="dark"
       >
         <ReactBootStrap.Navbar.Brand href="#home">
@@ -20,41 +23,36 @@ const Navbar = () => {
         <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootStrap.Nav className="ml-auto text-white">
             <Link to="/Home">
-              <ReactBootStrap.Nav.Link href="#features">
+
+              <ReactBootStrap.Nav.Link href="#home">
                 Home
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/Services">
-              <ReactBootStrap.Nav.Link href="#services">
-                Services
-              </ReactBootStrap.Nav.Link>
-            </Link>
+
+            <ReactBootStrap.Nav.Link href="#services">
+              Services
+            </ReactBootStrap.Nav.Link>
 
             <Link to="/classes">
-              <ReactBootStrap.Nav.Link href="#deets">
+              <ReactBootStrap.Nav.Link href="#classes">
                 Our Classes
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/about_us">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-                About us
-              </ReactBootStrap.Nav.Link>
-            </Link>
-            <Link to="/blog">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-                Blog
-              </ReactBootStrap.Nav.Link>
-            </Link>
+
+            <ReactBootStrap.Nav.Link href="#about">
+              About us
+            </ReactBootStrap.Nav.Link>
+
+            <ReactBootStrap.Nav.Link href="#blog">Blog</ReactBootStrap.Nav.Link>
+
             <Link to="/pricing">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
+              <ReactBootStrap.Nav.Link href="#pricing">
                 Pricing
               </ReactBootStrap.Nav.Link>
             </Link>
-            <Link to="/contact">
-              <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-                Contact us
-              </ReactBootStrap.Nav.Link>
-            </Link>
+            <ReactBootStrap.Nav.Link href="#contact">
+              Contact us
+            </ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar.Collapse>
       </ReactBootStrap.Navbar>

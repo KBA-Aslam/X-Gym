@@ -7,7 +7,7 @@ import instra from "../../../image/icon/bxl-instagram.png";
 
 function Footer() {
   return (
-    <div className="footer-body pb-3">
+    <div className="footer-body pb-3" id="contact">
       {/* <!-- Footer --> */}
       <div className="page-footer font-small mdb-color pt-4">
         {/* <!-- Footer Links --/> */}
